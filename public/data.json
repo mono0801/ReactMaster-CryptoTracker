@@ -1,0 +1,904 @@
+{
+    "coins": [
+        {
+            "id": "btc-bitcoin",
+            "name": "Bitcoin",
+            "symbol": "BTC",
+            "rank": 1,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "eth-ethereum",
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "rank": 2,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "usdt-tether",
+            "name": "Tether",
+            "symbol": "USDT",
+            "rank": 3,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "bnb-binance-coin",
+            "name": "Binance Coin",
+            "symbol": "BNB",
+            "rank": 4,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "xrp-xrp",
+            "name": "XRP",
+            "symbol": "XRP",
+            "rank": 5,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "sol-solana",
+            "name": "Solana",
+            "symbol": "SOL",
+            "rank": 6,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "usdc-usd-coin",
+            "name": "USDC",
+            "symbol": "USDC",
+            "rank": 7,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "steth-lido-staked-ether",
+            "name": "Lido Staked Ether",
+            "symbol": "STETH",
+            "rank": 8,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "ada-cardano",
+            "name": "Cardano",
+            "symbol": "ADA",
+            "rank": 9,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "doge-dogecoin",
+            "name": "Dogecoin",
+            "symbol": "DOGE",
+            "rank": 10,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "trx-tron",
+            "name": "TRON",
+            "symbol": "TRX",
+            "rank": 11,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "link-chainlink",
+            "name": "Chainlink",
+            "symbol": "LINK",
+            "rank": 12,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "avax-avalanche",
+            "name": "Avalanche",
+            "symbol": "AVAX",
+            "rank": 13,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "weth-weth",
+            "name": "WETH",
+            "symbol": "WETH",
+            "rank": 14,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "matic-polygon",
+            "name": "Polygon",
+            "symbol": "MATIC",
+            "rank": 15,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "dai-dai",
+            "name": "Dai",
+            "symbol": "DAI",
+            "rank": 16,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "wbtc-wrapped-bitcoin",
+            "name": "Wrapped Bitcoin",
+            "symbol": "WBTC",
+            "rank": 17,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "ltc-litecoin",
+            "name": "Litecoin",
+            "symbol": "LTC",
+            "rank": 18,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "shib-shiba-inu",
+            "name": "Shiba Inu",
+            "symbol": "SHIB",
+            "rank": 19,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "bch-bitcoin-cash",
+            "name": "Bitcoin Cash",
+            "symbol": "BCH",
+            "rank": 20,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "leo-leo-token",
+            "name": "LEO Token",
+            "symbol": "LEO",
+            "rank": 21,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "uni-uniswap",
+            "name": "Uniswap",
+            "symbol": "UNI",
+            "rank": 22,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "toncoin-the-open-network",
+            "name": "Toncoin",
+            "symbol": "TON",
+            "rank": 23,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "okb-okb",
+            "name": "OKB",
+            "symbol": "OKB",
+            "rank": 24,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "xlm-stellar",
+            "name": "Stellar",
+            "symbol": "XLM",
+            "rank": 25,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "xmr-monero",
+            "name": "Monero",
+            "symbol": "XMR",
+            "rank": 26,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "tusd-trueusd",
+            "name": "TrueUSD",
+            "symbol": "TUSD",
+            "rank": 27,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "kas-kaspa",
+            "name": "Kaspa",
+            "symbol": "KAS",
+            "rank": 28,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "btcb-binance-bitcoin",
+            "name": "Binance Bitcoin",
+            "symbol": "BTCB",
+            "rank": 29,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "atom-cosmos",
+            "name": "Cosmos",
+            "symbol": "ATOM",
+            "rank": 30,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "etc-ethereum-classic",
+            "name": "Ethereum Classic",
+            "symbol": "ETC",
+            "rank": 31,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "cro-cryptocom-chain",
+            "name": "Cronos",
+            "symbol": "CRO",
+            "rank": 32,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "rune-thorchain",
+            "name": "THORChain",
+            "symbol": "RUNE",
+            "rank": 33,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "ldo-lido-dao",
+            "name": "Lido DAO",
+            "symbol": "LDO",
+            "rank": 34,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "icp-internet-computer",
+            "name": "Internet Computer",
+            "symbol": "ICP",
+            "rank": 35,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "fil-filecoin",
+            "name": "Filecoin",
+            "symbol": "FIL",
+            "rank": 36,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "hbar-hedera-hashgraph",
+            "name": "Hedera Hashgraph",
+            "symbol": "HBAR",
+            "rank": 37,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "apt-aptos",
+            "name": "Aptos",
+            "symbol": "APT",
+            "rank": 38,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "near-near-protocol",
+            "name": "Near Protocol",
+            "symbol": "NEAR",
+            "rank": 39,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "mnt-mantle",
+            "name": "Mantle",
+            "symbol": "MNT",
+            "rank": 40,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "dot-polkadot",
+            "name": "Polkadot",
+            "symbol": "DOT",
+            "rank": 41,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "busd-binance-usd",
+            "name": "Binance USD",
+            "symbol": "BUSD",
+            "rank": 42,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "vet-vechain",
+            "name": "VeChain",
+            "symbol": "VET",
+            "rank": 43,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "tao-bittensor",
+            "name": "BitTensor",
+            "symbol": "TAO",
+            "rank": 44,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "inj-injective-protocol",
+            "name": "Injective Protocol",
+            "symbol": "INJ",
+            "rank": 45,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "op-optimism",
+            "name": "Optimism",
+            "symbol": "OP",
+            "rank": 46,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "aave-new",
+            "name": "Aave",
+            "symbol": "AAVE",
+            "rank": 47,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "mkr-maker",
+            "name": "Maker",
+            "symbol": "MKR",
+            "rank": 48,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "imx-immutable-x",
+            "name": "Immutable X",
+            "symbol": "IMX",
+            "rank": 49,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "grt-the-graph",
+            "name": "The Graph",
+            "symbol": "GRT",
+            "rank": 50,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "ftt-ftx-token",
+            "name": "FTX Token",
+            "symbol": "FTT",
+            "rank": 51,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "rndr-render-token",
+            "name": "Render Token",
+            "symbol": "RNDR",
+            "rank": 52,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "arb-arbitrum",
+            "name": "Arbitrum",
+            "symbol": "ARB",
+            "rank": 53,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "reth-rocket-pool-eth",
+            "name": "Rocket Pool ETH",
+            "symbol": "RETH",
+            "rank": 54,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "qnt-quant",
+            "name": "Quant",
+            "symbol": "QNT",
+            "rank": 55,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "egld-elrond",
+            "name": "MultiversX (Elrond)",
+            "symbol": "EGLD",
+            "rank": 56,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "algo-algorand",
+            "name": "Algorand",
+            "symbol": "ALGO",
+            "rank": 57,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "stx-stacks",
+            "name": "Stacks",
+            "symbol": "STX",
+            "rank": 58,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "tia-celestia",
+            "name": "Celestia",
+            "symbol": "TIA",
+            "rank": 59,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "theta-theta-token",
+            "name": "THETA",
+            "symbol": "THETA",
+            "rank": 60,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "snx-synthetix-network-token",
+            "name": "Synthetix Network Token",
+            "symbol": "SNX",
+            "rank": 61,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "bsv-bitcoin-sv",
+            "name": "Bitcoin SV",
+            "symbol": "BSV",
+            "rank": 62,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "ftm-fantom",
+            "name": "Fantom",
+            "symbol": "FTM",
+            "rank": 63,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "sand-the-sandbox",
+            "name": "The Sandbox",
+            "symbol": "SAND",
+            "rank": 64,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "hex-hex-from-pulsechain",
+            "name": "HEX from Pulsechain",
+            "symbol": "HEX",
+            "rank": 65,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "axs-axie-infinity",
+            "name": "Axie Infinity",
+            "symbol": "AXS",
+            "rank": 66,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "pls-pulsechain",
+            "name": "Pulsechain",
+            "symbol": "PLS",
+            "rank": 67,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "mana-decentraland",
+            "name": "Decentraland",
+            "symbol": "MANA",
+            "rank": 68,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "xtz-tezos",
+            "name": "Tezos",
+            "symbol": "XTZ",
+            "rank": 69,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "luna-terra",
+            "name": "Terra Classic",
+            "symbol": "LUNC",
+            "rank": 70,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "neo-neo",
+            "name": "NEO",
+            "symbol": "NEO",
+            "rank": 71,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "wbt-whitebit",
+            "name": "WhiteBIT Token",
+            "symbol": "WBT",
+            "rank": 72,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "kcs-kucoin-token",
+            "name": "KuCoin Token",
+            "symbol": "KCS",
+            "rank": 73,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "kava-kava",
+            "name": "Kava",
+            "symbol": "KAVA",
+            "rank": 74,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "bgb-bitget-token",
+            "name": "Bitget Token",
+            "symbol": "BGB",
+            "rank": 75,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "mina-mina-protocol",
+            "name": "Mina Protocol",
+            "symbol": "MINA",
+            "rank": 76,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "usdd-usdd",
+            "name": "USDD",
+            "symbol": "USDD",
+            "rank": 77,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "flow-flow",
+            "name": "Flow",
+            "symbol": "FLOW",
+            "rank": 78,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "gala-gala",
+            "name": "Gala",
+            "symbol": "GALA",
+            "rank": 79,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "eos-eos",
+            "name": "EOS",
+            "symbol": "EOS",
+            "rank": 80,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "miota-iota",
+            "name": "IOTA",
+            "symbol": "IOTA",
+            "rank": 81,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "frax-frax",
+            "name": "Frax",
+            "symbol": "FRAX",
+            "rank": 82,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "ht-huobi-token",
+            "name": "Huobi Token",
+            "symbol": "HT",
+            "rank": 83,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "sui-sui",
+            "name": "Sui",
+            "symbol": "SUI",
+            "rank": 84,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "klay-klaytn",
+            "name": "Klaytn",
+            "symbol": "KLAY",
+            "rank": 85,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "wbnb-wrapped-bnb",
+            "name": "Wrapped BNB",
+            "symbol": "WBNB",
+            "rank": 86,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "pyth-pyth-network",
+            "name": "Pyth Network",
+            "symbol": "PYTH",
+            "rank": 87,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "xdc-xdc-network",
+            "name": "XDC Network",
+            "symbol": "XDC",
+            "rank": 88,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "cheelee-cheelee",
+            "name": "Cheelee",
+            "symbol": "CHEEL",
+            "rank": 89,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "rose-oasis-network",
+            "name": "Oasis Network",
+            "symbol": "ROSE",
+            "rank": 90,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "fxs-frax-share",
+            "name": "Frax Share",
+            "symbol": "FXS",
+            "rank": 91,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "xec-ecash",
+            "name": "eCash",
+            "symbol": "XEC",
+            "rank": 92,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "chz-chiliz",
+            "name": "Chiliz",
+            "symbol": "CHZ",
+            "rank": 93,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "blur-blur",
+            "name": "Blur",
+            "symbol": "BLUR",
+            "rank": 94,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "rlb-rollbit-coin",
+            "name": "Rollbit Coin",
+            "symbol": "RLB",
+            "rank": 95,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "rpl-rocket-pool",
+            "name": "Rocket Pool",
+            "symbol": "RPL",
+            "rank": 96,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "radix-dlt",
+            "name": "Radix",
+            "symbol": "XRD",
+            "rank": 97,
+            "is_new": false,
+            "is_active": true,
+            "type": "coin"
+        },
+        {
+            "id": "cake-pancakeswap",
+            "name": "PancakeSwap",
+            "symbol": "CAKE",
+            "rank": 98,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "cfx-conflux-network",
+            "name": "Conflux Network",
+            "symbol": "CFX",
+            "rank": 99,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        },
+        {
+            "id": "crv-curve-dao-token",
+            "name": "Curve DAO Token",
+            "symbol": "CRV",
+            "rank": 100,
+            "is_new": false,
+            "is_active": true,
+            "type": "token"
+        }
+    ]
+}
