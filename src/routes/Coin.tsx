@@ -16,6 +16,9 @@ import Chart from "./Chart";
 import Price from "./Price";
 import { useSetRecoilState } from "recoil";
 import { isDarkAtom } from "../atom";
+import { IoHomeOutline } from "react-icons/io5";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { FaMoon } from "react-icons/fa";
 
 const Container = styled.div`
     max-width: 480px;
@@ -27,6 +30,13 @@ const Container = styled.div`
 const Header = styled.header`
     height: 10vh;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+const IconDiv = styled.div`
+    font-size: 175%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,14 +191,18 @@ function Coin({}: ICoinProps) {
             () => fetchCoinTickers(coinId),
             {
                 // 5초마다 fetch를 실행
-                refetchInterval: 5000,
+                // refetchInterval: 5000,
             }
         );
 
     const loading = infoLoading || tickersLoading;
 
     const setIsDarkAtom = useSetRecoilState(isDarkAtom);
-    const toggleTheme = () => setIsDarkAtom((prev) => !prev);
+    const [isDark, setIsDark] = useState(true);
+    const toggleTheme = () => {
+        setIsDarkAtom((prev) => !prev);
+        setIsDark((prev) => !prev);
+    };
 
     /*     const [loading, setLoading] = useState(true);
     const [info, setInfo] = useState<InfoData>();
@@ -224,6 +238,15 @@ function Coin({}: ICoinProps) {
                 </title>
             </Helmet>
             <Header>
+                <Link
+                    to={{
+                        pathname: `/`,
+                    }}
+                >
+                    <IconDiv>
+                        <IoHomeOutline />
+                    </IconDiv>
+                </Link>
                 {/* state가 존재하면 .name 없으면 "Loading"표시 (삼항연산자) */}
                 <Title>
                     {state?.name
@@ -233,7 +256,15 @@ function Coin({}: ICoinProps) {
                         ? "Loading..."
                         : infodata?.name}
                 </Title>
-                <button onClick={() => toggleTheme()}>Theme</button>
+                {isDark ? (
+                    <IconDiv onClick={() => toggleTheme()}>
+                        <MdOutlineWbSunny />
+                    </IconDiv>
+                ) : (
+                    <IconDiv onClick={() => toggleTheme()}>
+                        <FaMoon />
+                    </IconDiv>
+                )}
             </Header>
 
             {loading ? (
@@ -282,7 +313,7 @@ function Coin({}: ICoinProps) {
 
                     <Switch>
                         <Route path={`/${coinId}/price`}>
-                            <Price />
+                            <Price coinId={coinId} />
                         </Route>
                         <Route path={`/${coinId}/chart`}>
                             <Chart coinId={coinId} />

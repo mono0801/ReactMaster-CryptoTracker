@@ -1,4 +1,5 @@
 // 코인 리스트를 보여주는 페이지
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useQuery } from "react-query";
@@ -7,6 +8,9 @@ import { useSetRecoilState } from "recoil";
 import styled from "styled-components";
 import { fetchCoins } from "../api";
 import { isDarkAtom } from "../atom";
+import { IoHomeOutline } from "react-icons/io5";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { FaMoon } from "react-icons/fa";
 
 const Container = styled.div`
     max-width: 480px;
@@ -18,6 +22,13 @@ const Container = styled.div`
 const Header = styled.header`
     height: 10vh;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+const IconDiv = styled.div`
+    font-size: 175%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +115,11 @@ function Coins({}: ICoinsProps) {
     console.log(data?.slice(0, 100));
 
     const setIsDarkAtom = useSetRecoilState(isDarkAtom);
-    const toggleTheme = () => setIsDarkAtom((prev) => !prev);
+    const [isDark, setIsDark] = useState(true);
+    const toggleTheme = () => {
+        setIsDarkAtom((prev) => !prev);
+        setIsDark((prev) => !prev);
+    };
 
     return (
         <Container>
@@ -112,8 +127,25 @@ function Coins({}: ICoinsProps) {
                 <title>Coins</title>
             </Helmet>
             <Header>
+                <Link
+                    to={{
+                        pathname: `/`,
+                    }}
+                >
+                    <IconDiv>
+                        <IoHomeOutline />
+                    </IconDiv>
+                </Link>
                 <Title>Coins</Title>
-                <button onClick={() => toggleTheme()}>Theme</button>
+                {isDark ? (
+                    <IconDiv onClick={() => toggleTheme()}>
+                        <MdOutlineWbSunny />
+                    </IconDiv>
+                ) : (
+                    <IconDiv onClick={() => toggleTheme()}>
+                        <FaMoon />
+                    </IconDiv>
+                )}
             </Header>
 
             {isLoading ? (
